@@ -418,7 +418,7 @@ def predict(X, y, parameters):
     #print results
     #print ("predictions: " + str(p))
     #print ("true labels: " + str(y))
-    print("accuracy: "  + str(np.sum((p == y)/m) * 100) + "%")
+    print("accuracy: "  + str(np.sum((p == y)/m) * 100) + " %")
         
     return p
 
