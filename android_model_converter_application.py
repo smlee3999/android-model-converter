@@ -583,8 +583,8 @@ def main_with_original_dataset():
 
         # 5. TensorFlow Lite conversion
         lr_tflite_model, lr_tflite_filename = lr_converter.convert_to_tflite("logistic_regression.tflite")
-        tl_tflite_model, tl_tflite_filename = tl_converter.convert_to_tflite("two_layer_model.tflite")
-        ll_tflite_model, ll_tflite_filename = ll_converter.convert_to_tflite("l_layer_model.tflite")
+        tl_tflite_model, tl_tflite_filename = tl_converter.convert_to_tflite("nn_two_layer_model.tflite")
+        ll_tflite_model, ll_tflite_filename = ll_converter.convert_to_tflite("nn_l_layer_model.tflite")
         
         if lr_tflite_model is None or tl_tflite_model is None or ll_tflite_model is None:
             print("TensorFlow Lite conversion failed")
